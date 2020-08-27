@@ -25,7 +25,6 @@ daemon
 log-append /var/log/openvpn.log
 verb 3
 script-security 2
-explicit-exit-notify 2
 ping-exit 60
 client-connect /etc/openvpn/client-connect.sh
 client-disconnect /etc/openvpn/client-disconnect.sh
