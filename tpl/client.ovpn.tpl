@@ -14,3 +14,4 @@ resolv-retry infinite
 nobind
 persist-key
 persist-tun
+explicit-exit-notify 2
