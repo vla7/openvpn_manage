@@ -26,6 +26,11 @@ cp pki/private/server.key /etc/openvpn/server/
 cp pki/issued/server.crt /etc/openvpn/server/
 
 cp /root/vpn/tpl/server.conf.tpl /etc/openvpn/server.conf 
+cp /root/vpn/tpl/client-connect.sh /etc/openvpn/client-connect.sh
+cp /root/vpn/tpl/client-disconnect.sh /etc/openvpn/client-disconnect.sh
+
+chmod +x /etc/openvpn/client-connect.sh
+chmod +x /etc/openvpn/client-disconnect.sh
 
 /usr/bin/systemctl start openvpn@server
 
