@@ -1,8 +1,4 @@
 #!/bin/bash
-#if [ -z $1 ]; then
-#        echo "Using: $0 servername"
-#        exit 1
-#fi
 
 apt-get update -y
 apt-get upgrade -y
