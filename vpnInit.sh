@@ -2,7 +2,7 @@
 
 apt-get update -y
 apt-get upgrade -y
-apt-get install openvpn -y
+apt-get install openvpn easy-rsa -y
 
 echo "net.ipv4.ip_forward = 1" >> /etc/sysctl.conf
 
