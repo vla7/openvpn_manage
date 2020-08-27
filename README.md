@@ -1,5 +1,6 @@
 ## openvpn_manage
-Openvpn install and manage scripts. 
+Openvpn install and manage scripts for Debian 10.
+Split openvpn traffic between IPs.
 
 # For start:
 git clone https://github.com/vla7/openvpn_manage.git /root/vpn
