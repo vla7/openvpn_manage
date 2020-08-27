@@ -1,11 +1,16 @@
 ## openvpn_manage
 
-#vpnInit.sh - vpn server initialisation
+# vpnInit.sh
+vpn server initialisation
 
-#ip.list - list of new IPs
+# ip.list
+list of new IPs
 
-#ipAdd.sh - script to add IPs
+# ipAdd.sh
+script to add IPs
 
-#userAdd.sh - add new users
+# userAdd.sh
+script for adding new users
 
-#userDel.sh - removing users, revoking certificates
+# userDel.sh
+removing users, revoking certificates
