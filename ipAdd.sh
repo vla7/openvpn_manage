@@ -35,15 +35,14 @@ else
 	echo "$tpl" >> /etc/network/interfaces
 	echo >> /etc/network/interfaces	
 
-	NUM=$(expr $NUM + 1)
-fi
 
-if ifconfig | grep -qP "inet\s$IP\s"; then
-       error "IP '$IP' already is already UP"
-else
-	#ifup $IFACE:$NUM
-	ifconfig $IFACE:$NUM UP
-	[ $? -ne 0 ] && error "while ifup $IFACE:$NUM"
+	if ifconfig | grep -qP "inet\s$IP\s"; then
+		error "IP '$IP' already is already UP"
+	else
+		ifup $IFACE:$NUM
+		[ $? -ne 0 ] && error "while ifup $IFACE:$NUM"
+	fi
+	NUM=$(expr $NUM + 1)
 fi
 echo 
 done
